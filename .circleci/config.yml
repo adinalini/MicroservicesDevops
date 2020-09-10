@@ -1,4 +1,4 @@
-Python CircleCI 2.0 configuration file
+# Python CircleCI 2.0 configuration file
 #
 # Check https://circleci.com/docs/2.0/language-python/ for more details
 #
@@ -29,7 +29,7 @@ python3 -m venv venv
 make install
 # Install hadolint
 wget -O /bin/hadolint https://github.com/hadolint/hadolint/releases/download/v1.16.3/hadolint-Linux-x86_64 &&\
-# chmod +x /bin/hadolint
+chmod +x /bin/hadolint
 - save_cache:
 paths:
 - ./venv
